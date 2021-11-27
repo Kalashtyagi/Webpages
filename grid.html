@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<title>  grid layout </title>
+</head>
+<style>
+      *{  
+	       margin: 0;
+	       padding:0;
+	       box-sizing:border-box;
+	   }
+main{
+         text-align: center;
+         width: 75%;
+         margin: 50px auto;
+         border:2px solid black;
+		 display: grid;
+		 color: black;
+		 grid-template-rows:60px 20px 100px 200px 60px;
+	     grid-template-columns: repeat(3,1fr)150px;
+         grid-gap: 1px;
+    }
+         .div1{
+               background-color:yellow;
+               }
+         
+		 .div2{
+               background-color: orange;
+               grid-row:2/3;
+               grid-column:1/-1;
+              }
+         
+		 .div3{  
+		       background-color:  green;
+                grid-column: 2/-1;
+	          }
+	     
+		 .div4{  
+		       background-color:  blue;
+		      }
+	   
+	     .div5{ 
+	         background-color:  red;
+			 }
+	   
+	     .div6{ 
+	          background-color:  pink;
+			 }
+	   
+	    .div7{ 
+	          background-color:  brown;
+	           grid-row:3/5;
+			   grid-column: 4/5;
+			}
+	   
+	    .div8{ 
+	          background-color:  skyblue; 
+	          grid-column: 1/4;
+			}
+	   
+	    .div9{ 
+	          background-color:  grey; 
+	          grid-column:1/-1;
+	        }
+	   
+</style>
+
+<body>
+<main>
+        <div class = "div1">logo</div>
+        <div class = "div2"> menu</div>
+        <div class = "div3"> header </div>
+	    <div class = "div4"> box1 </div>
+	    <div class = "div5"> box2 </div>
+	    <div class = "div6"> box3 </div>
+	    <div class = "div7"> sidebar </div>
+	    <div class = "div8"> page content </div>
+	    <div class = "div9">page footer </div>
+</main>
+</body>
+</html>
